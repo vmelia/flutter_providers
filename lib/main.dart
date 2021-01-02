@@ -48,6 +48,12 @@ class MyHomePage extends StatelessWidget {
                 style: Theme.of(context).textTheme.headline4,
               ),
             ),
+            Consumer<Counter>(
+              builder: (_, counter, __) => Text(
+                '${counter.description}',
+                style: Theme.of(context).textTheme.headline4,
+              ),
+            ),
           ],
         ),
       ),
